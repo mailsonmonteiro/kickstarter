@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: fluxoos_development
+  database: kickstarter_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: fluxoos_test
+  database: kickstarter_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: fluxoos_production
+  database: kickstarter_production
   username: fluxoos
   password: <%= ENV['FLUXOOS_DATABASE_PASSWORD'] %>

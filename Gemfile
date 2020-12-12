@@ -55,4 +55,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "stimulus_reflex", "~> 3.2"
 
-gem "semantic-ui-sass", "~> 2.4"
+# Inovative rails frontend development
+gem "view_component", require: "view_component/engine"
