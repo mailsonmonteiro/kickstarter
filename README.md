@@ -8,20 +8,23 @@ ruby '2.6.3'
 Postgrees
 
 ## Instalation
-make sure that Yarn is installed: https://classic.yarnpkg.com/en/docs/install/#centos-stable
+make sure that Yarn is installed: https://classic.yarnpkg.com/en/docs/install/#centos-stable  
 npm install --global yarn
 
 ## install postgresql server 
-https://www.postgresql.org/download/linux/redhat/
+https://www.postgresql.org/download/linux/redhat/  
 apt-get install postgresql-10
 
 ## set postgrees user
-sudo -u postgres psql postgres
+sudo -u postgres psql postgres  
 create role "ubuntu" with createdb login password '';
 
 ## init. the database
 git clone https://github.com/mailsonmonteiro/kickstarter.git
-cd kickstarter
-bundle install
-yarn install --check-files
+cd kickstarter  
+bundle install  
+yarn install --check-files  
 rails db:setup
+
+## About devise
+This scaffold does not contains devise. Deal with it.
